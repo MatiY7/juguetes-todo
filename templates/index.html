@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de juguetes por hacer</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <!-- JS -->
+  <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
+</head>
+<body>
+  <h1>Lista de juguetes por hacer 🧸🚗🤖</h1>
+  <div class="contenedor">
+    <div class="formulario">
+      <h2>Agregar nueva tarea de juguete</h2>
+      <label for="nombre">Nombre del juguete o tarea</label>
+      <input type="text" id="nombre" placeholder="Ej: Comprar peluche de oso" required> 
+
+      <label for="descripcion">Descripción</label>
+      <textarea id="descripcion" rows="3" placeholder="Ej: Tamaño grande, color marrón"></textarea>
+
+      <button id="btnAgregar">Agregar tarea</button>
+    </div>
+
+    <h2>Tareas pendientes y completadas</h2>
+    <div id="listaTareas"></div>
+    <div id="mensajeVacio" class="vacio" style="display: none;">
+      Aún no hay tareas de juguetes. ¡Agregá la primera! 🎈
+    </div>
+  </div>
+</body>
+</html>

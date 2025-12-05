@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fdf3ff;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #ff6b81;
+}
+
+.contenedor {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.formulario {
+  margin-bottom: 20px;
+}
+
+.formulario h2 {
+  margin-top: 0;
+  color: #ff8a5c;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.formulario button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #ffb347;
+  font-weight: bold;
+}
+
+.formulario button:hover {
+  background: #ffa022;
+}
+
+.tarea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  background: #fff7e6;
+}
+
+.tarea.completada {
+  background: #d4ffdc;
+  text-decoration: line-through;
+  color: #666;
+}
+
+.tarea-info {
+  max-width: 60%;
+}
+
+.tarea-botones button {
+  margin-left: 5px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-completar {
+  background: #8bc34a;
+}
+
+.btn-borrar {
+  background: #ff6b6b;
+}
+
+.btn-completar:hover {
+  background: #7cb342;
+}
+
+.btn-borrar:hover {
+  background: #ff5252;
+}
+
+.vacio {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  margin-top: 10px;
+}
